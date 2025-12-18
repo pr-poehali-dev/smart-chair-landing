@@ -179,6 +179,165 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+              Our <span className="text-blue-600">Premium Collection</span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              AI-Designed Chairs & Armchairs — Where Technology Meets Italian Craftsmanship
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="group overflow-hidden border-slate-200 shadow-lg hover-scale">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img 
+                  src="https://cdn.poehali.dev/projects/c8733480-f995-4ef8-822b-fb8dc478fea6/files/026b97b2-d021-4645-a270-0b4cb029c0ec.jpg" 
+                  alt="Luxury velvet chair with gold legs"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <CardContent className="pt-6 pb-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Velvet Elegance</h3>
+                <p className="text-slate-600 mb-4">Premium velvet upholstery with gold-plated metal frame. Perfect for luxury hotel lobbies and VIP lounges.</p>
+                <div className="flex items-center gap-4 text-sm text-slate-500">
+                  <span className="flex items-center gap-1">
+                    <Icon name="Ruler" size={16} />
+                    85×75×95 cm
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Icon name="Weight" size={16} />
+                    12 kg
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group overflow-hidden border-slate-200 shadow-lg hover-scale">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img 
+                  src="https://cdn.poehali.dev/projects/c8733480-f995-4ef8-822b-fb8dc478fea6/files/05c52762-7483-425a-9b11-59ecc0935b64.jpg" 
+                  alt="Designer armchair with geometric pattern"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <CardContent className="pt-6 pb-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Geometric Luxe</h3>
+                <p className="text-slate-600 mb-4">Italian leather armrests with designer fabric. Ideal for premium restaurants and executive spaces.</p>
+                <div className="flex items-center gap-4 text-sm text-slate-500">
+                  <span className="flex items-center gap-1">
+                    <Icon name="Ruler" size={16} />
+                    90×80×100 cm
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Icon name="Weight" size={16} />
+                    15 kg
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group overflow-hidden border-slate-200 shadow-lg hover-scale">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img 
+                  src="https://cdn.poehali.dev/projects/c8733480-f995-4ef8-822b-fb8dc478fea6/files/05c66c19-e4b3-4437-8fe4-f4ec05d7fa7b.jpg" 
+                  alt="Modern minimalist bar stool"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <CardContent className="pt-6 pb-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Nordic Minimal</h3>
+                <p className="text-slate-600 mb-4">Scandinavian design with solid wood seat. Best for hotel bars and modern café concepts.</p>
+                <div className="flex items-center gap-4 text-sm text-slate-500">
+                  <span className="flex items-center gap-1">
+                    <Icon name="Ruler" size={16} />
+                    45×45×75 cm
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Icon name="Weight" size={16} />
+                    8 kg
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-slate-900 mb-4">Customization Available</h3>
+                <p className="text-lg text-slate-600 mb-6">
+                  Every piece can be tailored to your project's exact specifications — from fabric selection to frame finishes.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Icon name="Palette" size={24} className="text-blue-600 flex-shrink-0" />
+                    <div>
+                      <strong className="text-slate-900">Custom Colors</strong>
+                      <p className="text-sm text-slate-600">500+ fabric & leather options</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Maximize" size={24} className="text-blue-600 flex-shrink-0" />
+                    <div>
+                      <strong className="text-slate-900">Size Adjustments</strong>
+                      <p className="text-sm text-slate-600">Tailored to your space requirements</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Icon name="Sparkles" size={24} className="text-blue-600 flex-shrink-0" />
+                    <div>
+                      <strong className="text-slate-900">Logo Embossing</strong>
+                      <p className="text-sm text-slate-600">Brand your furniture discreetly</p>
+                    </div>
+                  </li>
+                </ul>
+                <Button 
+                  size="lg" 
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <Icon name="BookOpen" size={20} className="mr-2" />
+                  Request Full Catalog
+                </Button>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6 pb-6 text-center">
+                    <Icon name="Sparkles" size={40} className="mx-auto mb-3 text-amber-500" />
+                    <div className="text-3xl font-bold text-slate-900 mb-1">200+</div>
+                    <p className="text-sm text-slate-600">Unique Designs</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6 pb-6 text-center">
+                    <Icon name="Palette" size={40} className="mx-auto mb-3 text-blue-600" />
+                    <div className="text-3xl font-bold text-slate-900 mb-1">500+</div>
+                    <p className="text-sm text-slate-600">Material Options</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6 pb-6 text-center">
+                    <Icon name="Truck" size={40} className="mx-auto mb-3 text-green-600" />
+                    <div className="text-3xl font-bold text-slate-900 mb-1">100%</div>
+                    <p className="text-sm text-slate-600">On-Time Delivery</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white shadow-md">
+                  <CardContent className="pt-6 pb-6 text-center">
+                    <Icon name="ShieldCheck" size={40} className="mx-auto mb-3 text-purple-600" />
+                    <div className="text-3xl font-bold text-slate-900 mb-1">5 Years</div>
+                    <p className="text-sm text-slate-600">Warranty</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-slate-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
